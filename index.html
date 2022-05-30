@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <title>Casa de Seu Luis</title>
+    <title>Casa de Seu Luiz</title>
 </head>
 <body>
     <header>
-        <picture>
-            <img src="https://static.wixstatic.com/media/061c03_ba8cf8dc116d4fe8beaaba13bc194c18~mv2.png/v1/fill/w_457,h_186,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Marca%20horizontal%20azul%20com%20salm%C3%A3o.png" alt="Marca horizontal azul com salmão.png">
-        </picture>
-            <ul>
-                <a href="#"><il>Home</il></a>
-                <a href="#"><il>Sobre</il></a>
-                <a href="#"><il>Produtos</il></a>
-                <a href="#"><il>Contato</il></a>
+        <nav class="cabecalho">
+            <a id="img-logo" href="index.html"></a>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre">Sobre</a></li>
+                <li><a href="produtos">Produtos</a></li>
+                <li><a href="contato">Contato</a></li>
             </ul>
+            <div class="container">
+                <input type="checkbox" id="checkbox-menu">
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </nav>
     </header>
-    <div class="container">
-        <div class="back-fish">
-            <source media="(max-width:2560px)" srcset="img/background-fish 2560x1440.svg">
-            <source media="(max-width:1920px)" srcset="img/background-fish 1920x1080.svg">
-            <img src="img/background-fish 2560x1440.svg" alt="">
-            <img src="img/background-fish 1920x1080.svg" alt="">
-        </div>-
-    </div>
+    <main>
+    </main>
 </body>
 </html>
