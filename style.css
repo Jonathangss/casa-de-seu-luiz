@@ -94,11 +94,18 @@ main{
 .title {
     color: #154072;
     text-align: start;
-    font-size: clamp(4rem, 10vw + 0.1rem, 10rem);
+    font-size: clamp(4rem, 10vw + 0.1rem, 8rem);
     margin: 0 auto;
     width: 99rem;
     height: auto;
     padding-left: 2rem;
+}
+.sobre{
+    padding: 2rem;
+}
+#bacalhau-frito{
+    padding: 0 auto;
+    width: 50%;
 }
 
 @media (max-width: 874px){
@@ -199,6 +206,17 @@ main{
             transform: translateX(0);
         }
     }
+    #bacalhau-frito{
+        margin-top: 3rem;
+            width: 100vw;
+    }
+    .sobre{
+        margin: 2rem;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 .container-sobre{
      display: inline;
@@ -210,4 +228,8 @@ main{
     display: flex;
     justify-content:center;
     align-items: center;
+}
+#bacalhau-frito{
+    padding: 0 auto;
+    width: 50%;
 }
