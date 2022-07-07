@@ -50,7 +50,7 @@ nav{
 .nav-list li + li {
     list-style: none;
     display: flex;
-    margin-left: 20px;
+    margin-left: 22px;
  }
 .nav-list li{
     font-size: 30px;
@@ -100,11 +100,81 @@ main{
     height: auto;
     padding-left: 2rem;
 }
-
+/* .container-sobre{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-sobre{
+    margin: 0 auto;
+    width: 99rem;
+    height: auto;
+    padding-left: 8px;
+    font-size: clamp(4rem, 10vw + 0.1rem, 7rem);
+    display: inline-block;
+}
+.sobre{
+    color: #154072;
+    text-align: start;
+    font-size: clamp(2rem, 10vw + 0.1rem, 1rem);
+    margin: 0 auto;
+  
+    height: auto;
+    padding: 5rem;
+}
+.sobre p{
+    margin: 0 auto;
+    height: auto;
+    padding-left: 8px;
+    font-size: clamp(4rem, 1vw + 0.1rem, 7rem);
+    display: inline-block;
+} */
+.sobre{
+    width: 80%;
+    margin: 6rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo-sobre{
+    margin-top: 2rem;
+    display: flex;
+    background-color: #e96056;
+    width: 71%;
+    height: 16vh;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    
+}
+.titulo-sobre h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: clamp(4rem, 10vw + 0.1rem, 10rem);
+    margin:1.5rem 17rem;
+}
+.sobre p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 0 24%;
+    text-align: justify;
+}
+#seuluiz{
+    margin: 2rem auto;
+    padding: 0 auto;
+    width: 35%;
+}
 @media (max-width: 874px){
     body{
         overflow-x: hidden;
     }
+   /*  .sobre p{
+        font-size: 1.3rem;
+    } */
     nav{
             display: flex;
             align-items: center;
@@ -138,7 +208,7 @@ main{
     #bacalhau{
         margin-top: 3rem;
         width: 90vw;
-    }
+    }   
     .mobile-menu{
         align-content: center;
         z-index: 2;
@@ -185,6 +255,10 @@ main{
         font-size: 25px;
         
     }
+    #seuluiz{
+        margin: 1rem auto;
+        width: 90vw;  
+    }
    
     .nav-list.active{
         transform: translateX(0%);
@@ -199,15 +273,5 @@ main{
             transform: translateX(0);
         }
     }
-}
-.container-sobre{
-     display: inline;
-}
-.title-sobre{
-    display: inline-block;
-}
-.sobre{
-    display: flex;
-    justify-content:center;
-    align-items: center;
+   
 }
