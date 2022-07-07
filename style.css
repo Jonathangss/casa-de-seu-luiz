@@ -94,7 +94,7 @@ main{
 .title {
     color: #154072;
     text-align: start;
-    font-size: clamp(4rem, 10vw + 0.1rem, 10rem);
+    font-size: clamp(4rem, 10vw + 0.1rem, 8rem);
     margin: 0 auto;
     width: 99rem;
     height: auto;
