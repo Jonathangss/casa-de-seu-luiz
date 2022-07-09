@@ -10,10 +10,13 @@ a{
 a:hover{
     color: #154072;
 }
+
 .nav-tamanho{
     margin-right: 30px;
 }
 nav{
+    position: fixed;
+    z-index: 10;
     /* display: flex;
     justify-content: space-around;
     align-items: center;
@@ -131,31 +134,28 @@ main{
     display: inline-block;
 } */
 .sobre{
-    width: 80%;
-    margin: 6rem auto;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .titulo-sobre{
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     background-color: #e96056;
-    width: 71%;
-    height: 16vh;
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    justify-content: flex-start;
-    
+    width: 70vw;
+    height: 20vh;
+  
+   
+   
 }
-.titulo-sobre h1{
+#titulosobre{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: clamp(4rem, 10vw + 0.1rem, 10rem);
-    margin:1.5rem 17rem;
+    position: relative;
+
 }
 .sobre p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -205,6 +205,7 @@ main{
         align-items: center;
         align-content: center;
     }
+    
     #bacalhau{
         margin-top: 3rem;
         width: 90vw;
