@@ -14,6 +14,9 @@ a:hover{
 .nav-tamanho{
     margin-right: 30px;
 }
+section{
+    display: block;
+}
 nav{
     position: fixed;
     z-index: 10;
@@ -65,7 +68,7 @@ main{
     background: url(img/background-fish\ 2560x1440.jpg)no-repeat center center;
     padding:3%;
     background-size: cover;
-    height: 60vh;
+    height: 72vh;
     display: flex;
     align-content: flex-start;
     align-items: center;
@@ -104,19 +107,16 @@ main{
     height: auto;
     padding-left: 2rem;
 }
+.titulo-sobre{
+   
+}
 /* .container-sobre{
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.title-sobre{
-    margin: 0 auto;
-    width: 99rem;
-    height: auto;
-    padding-left: 8px;
-    font-size: clamp(4rem, 10vw + 0.1rem, 7rem);
-    display: inline-block;
+
 }
 .sobre{
     color: #154072;
@@ -134,40 +134,52 @@ main{
     font-size: clamp(4rem, 1vw + 0.1rem, 7rem);
     display: inline-block;
 } */
+#ancorasobre{
+    width: 60px;
+}
 .sobre{
     width: 100%;
     margin: 0 auto;
+    padding: 5% 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 .titulo-sobre{
     margin-top: 1rem;
     display: flex;
     background-color: #e96056;
     width: 70vw;
-    height: 20vh;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
    
    
 }
-#titulosobre{
+.titulo-sobre h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: clamp(4rem, 10vw + 0.1rem, 10rem);
     position: relative;
+
 
 }
 .sobre p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
-    padding: 0 24%;
+    padding: 0 20%;
     text-align: justify;
+}
+.textosobre{
+    margin-top: 5rem;
 }
 #seuluiz{
     margin: 2rem auto;
     padding: 0 auto;
-    width: 35%;
+    width: 30vw;
 }
 @media (max-width: 874px){
     body{
@@ -277,3 +289,46 @@ main{
     }
    
 }
+.container{
+    max-width: 1114px;
+     background-color: rgb(38, 38, 38);
+     border: 1px solid red;
+     padding: 15px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     height: 50vh;
+     grid-template-rows:100%;
+     row-gap: 10px; 
+     column-gap: 35px;
+ }
+ .img-sobre{
+    background-color: rgb(38, 38, 38);
+     border: 3px solid red;
+     padding: 50px;
+     display: grid;
+     gap:5px;
+     grid-template-areas: 
+       "img1 img2"
+       "img3 img4"   
+ }
+ #img1{
+     grid-area: img1;
+     height: 60%;
+ }
+ #img2{
+     grid-area: img2;
+     height: 60%;
+ }
+ #img3{
+     grid-area: img3;
+     height: 60%;
+ }
+ #img4{
+     grid-area: img4;
+     height: 60%;
+ }
+ .container div{
+    background-color: aliceblue;
+    padding: 20px;
+    border: 1px solid rgb(255, 242, 56);
+    }
