@@ -289,8 +289,9 @@ main{
     }
    
 }
+.titulo-sobre h1{font-size: 9rem;}
 .container{
-    max-width: 1114px;
+    max-width: 1525px;
      background-color: rgb(38, 38, 38);
      border: 1px solid red;
      padding: 15px;
@@ -331,4 +332,24 @@ main{
     background-color: aliceblue;
     padding: 20px;
     border: 1px solid rgb(255, 242, 56);
+    }
+    .txt-sobre h1{font-size: 35px;
+    margin-bottom: 25px;
+}
+    .txt-sobre p{
+        margin-top: 8px;
+        padding: 0;
+        column-count:2;
+        font-size: 14px;
+    }
+    #insta{
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 5%;
+    }
+
+    #maria{
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 50%;
     }
