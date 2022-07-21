@@ -64,7 +64,7 @@ nav{
   letter-spacing: 3px;
 }
 
-main{
+.titulo-main{
     background: url(img/background-fish\ 2560x1440.jpg)no-repeat center center;
     padding:3%;
     background-size: cover;
@@ -447,8 +447,8 @@ main{
         flex-direction: column;
     } 
 
-    .produtos{
-        width: 100%;
+    .produtos_sec{
+        width:50%;
         margin: 0 auto;
         padding:  0;
         display: flex;
@@ -470,3 +470,69 @@ main{
     .txt-sobre h1{
          font-size: 35px;
     }
+
+    
+.produtos li:active{
+    border-color: goldenrod;
+}
+.produtos{
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.produtos li{
+    background-color: #fed7d7;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    border: 2px solid #777777;
+    border-radius: 15px;
+    border-bottom-width: 8px;
+    border-right-width: 8px;
+}
+.produtos li:hover{
+    border-color:#154072;
+    background-color: #e96056;
+}
+.produtos li:active{
+    border-color: goldenrod;
+}
+
+.produtos h2{
+    
+    font-size: 30px;
+    font-weight: bold;
+}
+.produtos li:hover h2{
+     font-size: 35px;
+}
+.preco-descricao{
+    margin: 10px 0 0;
+    font-size: 25px;
+  
+}
+.preco-produto{
+    font-size: 40px;
+    font-weight: bold; 
+    margin: 10px 0 0;
+}
+.produtos li img {
+    width: 100%;
+}
+#bacalhau-card1{
+    width: 80%;
+}
+#bacalhau-card2{
+    width: 55%;
+}
+#bacalhau-card3{
+    width: 80%;
+}
