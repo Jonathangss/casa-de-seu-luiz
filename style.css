@@ -536,3 +536,54 @@ nav{
 #bacalhau-card3{
     width: 80%;
 }
+.formulario{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.radio-telefone{
+    display: inline-block;
+    vertical-align: top;
+}
+.button{
+    width: 200px;
+    height: 70px;
+    border-radius: 45px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    background: #154072;
+    color: #fff;
+    border: 1px solid;
+    transition: all .7s;
+    border: 4px solid #e96056;
+    transition-delay: 0.2s;
+    cursor: pointer;
+}
+.button:hover{
+    box-shadow: 0 0 20px #ff776e, 0 0 40px #fed7d7;
+    border:  4px solid #ff776e;
+    background: #ff776e;
+    color: #154072;
+    transition: box-shadow 1s, border 3s, background 1s, color 1s;
+}
+.formulario div p{
+    margin-top: 20px;
+   font-size: 25px;
+}

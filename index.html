@@ -141,9 +141,34 @@
         <div class="titulo-sobre">  
             <h1>Contatos</h1>
         </div> 
-        <form>
-            
-        </form>
+        <main class="formulario">
+            <form>
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome">
+        
+                <label for="email">Email</label>
+                <input type="text" id="email">
+        
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone">
+               
+                <label for="comentario">Escreva seu comentário</label>
+                <textarea name="escreva seu comentario" id="comentario" cols="69" rows="10"></textarea>
+               
+                <div>
+                    <p>Como prefere o nosso contato?</p>
+                    <label for="radio-email">Email</label>
+                    <input type="radio" name="contato" value="email" id="radio-email">
+                    <label for="radio-whatsapp">Whatsapp</label>
+                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                    <label for="radio-telefone">Telefone</label>
+                    <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                </div>
+                    <label for="aceitar-contato">Gostaria de receber novidades?</label>
+                    <input type="checkbox" value="true" id="aceitar-contato">
+                <button class="button">Enviar</button>
+            </form>
+        </main>
     </section>
     <script src="app.js"></script>
 </body>
