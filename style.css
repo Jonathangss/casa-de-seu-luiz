@@ -10,10 +10,16 @@ a{
 a:hover{
     color: #154072;
 }
+
 .nav-tamanho{
     margin-right: 30px;
 }
+section{
+    display: block;
+}
 nav{
+    position: fixed;
+    z-index: 10;
     /* display: flex;
     justify-content: space-around;
     align-items: center;
@@ -58,11 +64,11 @@ nav{
   letter-spacing: 3px;
 }
 
-main{
+.titulo-main{
     background: url(img/background-fish\ 2560x1440.jpg)no-repeat center center;
     padding:3%;
     background-size: cover;
-    height: 60vh;
+    height: 72vh;
     display: flex;
     align-content: flex-start;
     align-items: center;
@@ -71,6 +77,7 @@ main{
     justify-content: space-between;
 }
 #bacalhau{
+    z-index: 9;
     padding: 0 auto;
     width: 50%;
 }
@@ -100,19 +107,16 @@ main{
     height: auto;
     padding-left: 2rem;
 }
+.titulo-sobre{
+   margin-bottom: 15px;
+}
 /* .container-sobre{
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.title-sobre{
-    margin: 0 auto;
-    width: 99rem;
-    height: auto;
-    padding-left: 8px;
-    font-size: clamp(4rem, 10vw + 0.1rem, 7rem);
-    display: inline-block;
+
 }
 .sobre{
     color: #154072;
@@ -130,43 +134,54 @@ main{
     font-size: clamp(4rem, 1vw + 0.1rem, 7rem);
     display: inline-block;
 } */
+#ancorasobre{
+    width: 60px;
+}
 .sobre{
-    width: 80%;
-    margin: 6rem auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5% 0;
+    padding-bottom: 10px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 .titulo-sobre{
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     background-color: #e96056;
-    width: 71%;
-    height: 16vh;
-    align-items: flex-end;
+    width: 70vw;
+    height: 15vh;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    justify-content: flex-start;
-    
+    justify-content: center;
+    align-items: center;
+  
+   
+   
 }
 .titulo-sobre h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: clamp(4rem, 10vw + 0.1rem, 10rem);
-    margin:1.5rem 17rem;
+    position: relative;
+
+
 }
 .sobre p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
-    padding: 0 24%;
+    padding: 0 20%;
     text-align: justify;
+}
+.textosobre{
+    margin-top: 5rem;
 }
 #seuluiz{
     margin: 2rem auto;
     padding: 0 auto;
-    width: 35%;
+    width: 30vw;
 }
 @media (max-width: 874px){
     body{
@@ -205,6 +220,7 @@ main{
         align-items: center;
         align-content: center;
     }
+    
     #bacalhau{
         margin-top: 3rem;
         width: 90vw;
@@ -240,7 +256,7 @@ main{
         top: 1vh;
         right: 0;
         width: 45vw;
-        height: 100%;
+        height: 78vh;
         background: #eaeaea;
         opacity: 0.91;
         flex-direction: column;
@@ -252,7 +268,7 @@ main{
     .nav-list li{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         margin-left:0px;
-        font-size: 25px;
+        font-size: 40px;
         
     }
     #seuluiz{
@@ -274,4 +290,308 @@ main{
         }
     }
    
+}
+.titulo-sobre h1{font-size: 9rem;}
+.container{
+    width: 69%;
+     background-color:#f5f5f5;
+     border: 1px solid red;
+     padding: 15px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     height: 50vh;
+     grid-template-rows:100%;
+
+     column-gap: 35px;
+ }
+
+ .container-galeria{
+    margin:0 auto;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 250px;
+    padding: 5px;
+    row-gap: 5%;
+}
+
+.item-galeria{
+    position: relative;
+    
+}
+
+.item-galeria .img-galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.h-1{
+    grid-row: span 1;
+}
+
+.h-2{
+    grid-row: span 2;
+}
+
+.w-1{
+    grid-column: span 1;
+}
+
+.w-2{
+    grid-column: span 2;
+}
+
+
+@media(max-width:768px){
+    .container-galeria{
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: 50vh;
+    }
+
+    .h-2{
+        grid-row: span 1;
+    }
+    
+    .w-2{
+        grid-column: span 1;
+    }
+}
+#seuluiz-img{
+    width: 85%;
+    padding-bottom: 100px;
+}
+#casaseuluiz-img{
+    width: 100%;
+    height: 180%;
+}
+/*  .img-sobre{
+    width: 35vw;
+    background-color: rgb(209, 234, 255);
+     border: 3px solid red;
+     padding-bottom: 10px;
+     display: grid;
+     row-gap:1px;
+     column-gap:10px;
+     grid-template-areas: 
+       "img1 img2"
+       "img3 img4";  
+ }
+ #img1{
+     grid-area: img1;
+     height: 100%;
+     padding: 0;
+ }
+ #img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+ }
+ #img2{
+    grid-area: img2;
+    height: 100%;
+    padding: 0;
+}
+#img2 img{
+   margin: 0;
+   width: 100%;
+   height: 100%;
+   object-fit:contain;
+}
+#img3{
+    grid-area: img3;
+    height: 100%;
+    padding: 0;
+}
+#img3 img{
+   margin: 0;
+   width: 100%;
+   height: 100%;
+   object-fit:cover;
+}
+#img4{
+    grid-area: img4;
+    height: 100%;
+    padding: 0;
+}
+#img4 img{
+   margin: 0;
+   width:100%;
+   height: 100%;
+   object-fit:cover;
+} */
+/*  .container div{
+    background-color: rgb(209, 234, 255);}
+    .txt-sobre h1{font-size: 35px;
+    margin-bottom: 25px;
+} */
+    .txt-sobre p{
+        margin: 8px;
+        padding: 2px;
+        column-count:2;
+        font-size: 18px;
+    }
+    #insta{
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 5%;
+    }
+
+    #maria{
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 50%;
+        display: flex;
+        align-items:flex-end;
+        flex-direction: column;
+    } 
+
+    .sec{
+        width:50%;
+        margin: 0 auto;
+        padding:  0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .titulo-sobre{
+        margin-top: 1rem;
+        display: flex;
+        background-color: #e96056;
+        width: 70vw;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .txt-sobre h1{
+         font-size: 35px;
+    }
+
+    
+.produtos li:active{
+    border-color: goldenrod;
+}
+.produtos{
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.produtos li{
+    background-color: #fed7d7;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    border: 2px solid #777777;
+    border-radius: 15px;
+    border-bottom-width: 8px;
+    border-right-width: 8px;
+}
+.produtos li:hover{
+    border-color:#154072;
+    background-color: #e96056;
+}
+.produtos li:active{
+    border-color: goldenrod;
+}
+
+.produtos h2{
+    
+    font-size: 30px;
+    font-weight: bold;
+}
+.produtos li:hover h2{
+     font-size: 35px;
+}
+.preco-descricao{
+    margin: 10px 0 0;
+    font-size: 25px;
+  
+}
+.preco-produto{
+    font-size: 40px;
+    font-weight: bold; 
+    margin: 10px 0 0;
+}
+.produtos li img {
+    width: 100%;
+}
+#bacalhau-card1{
+    width: 80%;
+}
+#bacalhau-card2{
+    width: 55%;
+}
+#bacalhau-card3{
+    width: 80%;
+}
+.formulario{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.radio-telefone{
+    display: inline-block;
+    vertical-align: top;
+}
+.button{
+    width: 200px;
+    height: 70px;
+    border-radius: 45px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    background: #154072;
+    color: #fff;
+    border: 1px solid;
+    transition: all .7s;
+    border: 4px solid #e96056;
+    transition-delay: 0.2s;
+    cursor: pointer;
+}
+.button:hover{
+    box-shadow: 0 0 20px #ff776e, 0 0 40px #fed7d7;
+    border:  4px solid #ff776e;
+    background: #ff776e;
+    color: #154072;
+    transition: box-shadow 1s, border 3s, background 1s, color 1s;
+}
+.formulario div p{
+    margin-top: 20px;
+   font-size: 25px;
+}
+iframe{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    align-items: center;
+    width: 75vw;
+    height: 25vh;
 }
